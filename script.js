@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     pendingChoresList.innerHTML = '';
     completedChoresList.innerHTML = '';
 
-    chores.sort((a,b) => b.priority > a.priority);
+    chores.sort((a,b) => b.priority - a.priority);
     chores.forEach(chore => {
       const li = document.createElement('li');
       li.textContent = chore.text
