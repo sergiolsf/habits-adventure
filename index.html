@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habits Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Chores</h1>
+    <div class="input-container">
+      <input type="text" id="chore-input" placeholder="Add a new chore...">
+      <select id="priority-input">
+        <option value="3">High</option>
+        <option value="2">Medium</option>
+        <option value="1">Low</option>
+      </select>
+      <button id="add-chore-btn">Add Chore</button>
+    </div>
+    <div class="chores-container">
+      <h2>Pending Chores</h2>
+      <ul id="pending-chores-list"></ul>
+    </div>
+    <div class="chores-container">
+      <h2>Completed Chores</h2>
+      <ul id="completed-chores-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
